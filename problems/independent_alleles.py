@@ -1,5 +1,7 @@
 """Mendel's Second Law
 
+Problem: https://rosalind.info/problems/lia/
+
 Calculates probability that there are at least n AaBb offspring in the kth 
 generation of mating with AaBb organisms, where the 0th generation consisted 
 of one AaBb organism.

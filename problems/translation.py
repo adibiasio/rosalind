@@ -1,4 +1,6 @@
 """Translates a Strand of mRNA into a Protein Sequence.
+
+Problem: https://rosalind.info/problems/prot/
 """
 
 # X represents a 'Stop' codon

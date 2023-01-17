@@ -1,4 +1,6 @@
 """Counting Nucleotides in a Strand of DNA.
+
+Problem: https://rosalind.info/problems/dna/
 """
 
 with open('in/rosalind_dna.txt', 'r') as infile:

@@ -1,5 +1,7 @@
 """Mendel's First Law
 
+Problem: https://rosalind.info/problems/iprb/
+
 Calculates probability of an offspring expressing a dominant phenotype,
 given the number of homozygous dominant, heterozygous, and homozygous recessive
 individuals for the trait in a population. Assumes random mating.

@@ -1,4 +1,6 @@
 """Calculating Population Size as a function of time.
+
+Problem: https://rosalind.info/problems/fib/
 """
 
 def population(n, k):

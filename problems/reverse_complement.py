@@ -1,4 +1,6 @@
 """Generates the Reverse Complement of a Strand of DNA.
+
+Problem: https://rosalind.info/problems/revc/
 """
 
 base_pairing = {

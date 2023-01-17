@@ -1,4 +1,6 @@
 """Calculates the Total Weight of a Chain of Amino Acids.
+
+Problem: https://rosalind.info/problems/prtm/
 """
 
 masses = {

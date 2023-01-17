@@ -1,4 +1,6 @@
 """Transcribes a Strand of RNA from a strand of DNA.
+
+Problem: https://rosalind.info/problems/rna/
 """
 
 with open("in/rosalind_rna.txt", "r") as infile:

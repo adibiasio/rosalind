@@ -1,5 +1,7 @@
 """Enumerating Gene Orders.
 
+Problem: https://rosalind.info/problems/perm/
+
 Generates all possible permutations of the numbers 1 through n.
 """
 

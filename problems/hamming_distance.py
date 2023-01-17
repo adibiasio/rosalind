@@ -1,4 +1,6 @@
 """"Calculates Hamming Distance between two Strands of DNA.
+
+Problem: https://rosalind.info/problems/hamm/
 """
 
 with open("in/rosalind_hamm.txt", "r") as infile:

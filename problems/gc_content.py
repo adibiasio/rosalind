@@ -1,4 +1,6 @@
 """Computes GC-Content of Strands of DNA inputted from FASTA format.
+
+Problem: https://rosalind.info/problems/gc/
 """
 
 with open("in/rosalind_gc.txt", "r") as infile:
