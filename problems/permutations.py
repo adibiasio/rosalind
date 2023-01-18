@@ -5,7 +5,7 @@ Problem: https://rosalind.info/problems/perm/
 Generates all possible permutations of the numbers 1 through n.
 """
 
-from independent_alleles import factorial
+from _methods import factorial
 
 def permute(arr, l, r, out):    
     if l == r:

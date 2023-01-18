@@ -8,6 +8,7 @@ and translation written for other rosalind problems.
 Problem: https://rosalind.info/problems/splc/
 """
 
+from _methods import read_fasta
 from transcription import transcribe
 from translation import translate
 
@@ -19,19 +20,7 @@ def splice(dna, introns) -> str:
 
 
 with open("in/rosalind_splc.txt", "r") as infile:
-    strands = []
-    curr_strand = ""
-
-    for line in infile:
-        if line[0] == ">":
-            strands.append(curr_strand)
-            curr_strand = ""
-        else:
-            curr_strand += line.strip()
-
-    strands.append(curr_strand)
-    strands.remove("")
-
+    strands = read_fasta(infile)
     dna = strands[0]
     introns = strands[1:]
     spliced_dna = splice(dna, introns)

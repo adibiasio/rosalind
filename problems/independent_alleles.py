@@ -22,11 +22,7 @@ To determine the probability of there being at least N AaBb offspring, we can
 sum the probabilities of all possible numbers of AaBb offspring: N <= x <= 2^k.
 """
 
-def factorial(n):
-    if n <= 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
+from _methods import factorial
 
 with open("in/rosalind_lia.txt", "r") as infile:
     nums = infile.readline().split()
