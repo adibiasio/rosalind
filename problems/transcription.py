@@ -2,9 +2,7 @@
 
 Problem: https://rosalind.info/problems/rna/
 """
-
-with open("in/rosalind_rna.txt", "r") as infile:
-    dna = infile.readlines()[0].strip()
+def transcribe(dna) -> str:
     rna = ""
 
     for base in dna:
@@ -13,5 +11,10 @@ with open("in/rosalind_rna.txt", "r") as infile:
         else:
             rna += base
     
+    return rna
+
+with open("in/rosalind_rna.txt", "r") as infile:
+    dna = infile.readlines()[0].strip()
+
     with open("out.txt", "w") as out:
-        out.write(rna)
+        out.write(transcribe(dna))

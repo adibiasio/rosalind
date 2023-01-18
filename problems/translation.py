@@ -74,13 +74,17 @@ codon_table = {
     "GGG": "G"
 }
 
-with open("in/rosalind_prot.txt", "r") as infile:
-    rna = infile.readlines()[0].strip()
+def translate(rna) -> str:
     protein = ""
 
-    for i in range(0, len(rna) - 2, 3):
+    for i in range(0, len(rna) - 3, 3):
         if codon_table[rna[i:i + 3]] == "X": break
         protein += codon_table[rna[i:i + 3]]
+    
+    return protein
+
+with open("in/rosalind_prot.txt", "r") as infile:
+    rna = infile.readlines()[0].strip()
 
     with open("out.txt", "w") as out:
-        out.write(protein)
+        out.write(translate(rna))
