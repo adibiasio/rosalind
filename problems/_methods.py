@@ -1,6 +1,9 @@
 """A Collection of Common Methods Used to Solve Problems.
 """
 
+from transcription import transcribe
+from translation import translate
+from rna_splicing import splice
 
 """
 Reads from a file containing DNA strands in FASTA format.

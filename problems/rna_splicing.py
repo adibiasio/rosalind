@@ -8,9 +8,7 @@ and translation written for other rosalind problems.
 Problem: https://rosalind.info/problems/splc/
 """
 
-from _methods import read_fasta
-from transcription import transcribe
-from translation import translate
+from _methods import read_fasta, transcribe, translate
 
 def splice(dna, introns) -> str:
     for intron in introns:
