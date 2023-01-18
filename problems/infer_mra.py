@@ -32,9 +32,9 @@ with open("in/rosalind_mrna.txt", "r") as infile:
     prod = 1
 
     for aa in protein:
+        prod *= aa_freq[aa]
         if (prod > 1000000):
             prod %= 1000000
-        prod *= aa_freq[aa]
 
     with open("out.txt", "w") as out:
         out.write(str(prod))
